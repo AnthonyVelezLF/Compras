@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ventas.views import inicio,articulo,cliente,crearCliente,venta
+from ventas.views import inicio,articulo,cliente,crearCliente,venta,compra,proveedor,crearProveedor,producto,crearProducto,categoria,crearCategoria,factura,crearFactura
 from django.conf.urls.static import static
 from ecommerce import settings
 urlpatterns = [
@@ -25,6 +25,15 @@ urlpatterns = [
     path('cliente/', cliente, name='cliente'),
     path('crearcliente/', crearCliente, name='crearcliente'),
     path('venta/', venta, name='venta'),
+    path('compra/', compra, name='compra'),
+    path('proveedor/', proveedor, name='proveedor'),
+    path('crearproveedor/', crearProveedor, name='crearproveedor'),
+    path('producto/', producto, name='producto'),
+    path('crearproducto/', crearProducto, name='crearprroducto'),
+    path('categoria/', categoria, name='categoria'),
+    path('crearcategoria/', crearCategoria, name='crearcategoria'),
+    path('factura/', factura, name='factura'),
+    path('crearfactura/', crearFactura, name='crearfactura'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

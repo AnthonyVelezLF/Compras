@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+
+
+      <div class="container-fluid">
+       <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
+          <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/administracion.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+              <div class="card-body text-center">
+              <a class="text-decoration-none" href="{% url 'producto' %}">
+                <h5 class="card-title text-success">Productos</h5>
+              </a>
+                <p class="card-text">Productos disponibles para la compra</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/administracion-del-dinero.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+               <a class="text-decoration-none" href="{% url 'categoria' %}">
+                <h5 class="card-title text-success">Categorias</h5>
+               </a>
+                <p class="card-text">Articulos organizados segun su linea</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card"  style="height:15rem" >
+              <img src="{% static 'img/cards/gestion-de-producto.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'proveedor' %}">
+                  <h5 class="card-title text-success">Proveedores</h5>
+                </a>
+                <p class="card-text">Registro de proveedores que compran en la empresa</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col">
+            <div class="card" style="height:15rem"  >
+              <img src="{% static 'img/cards/administracion.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+             <div class="card-body text-center">
+               <a class="text-decoration-none" href="{% url 'factura' %}">
+                <h5 class="card-title text-success">Factura</h5>
+               </a>
+                <p class="card-text">Registro de Factura</p>
+              </div>
+            </div>
+           </div>
+       </div>
+      </div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'formularioFactura.html' %}
+{% load static %}
+
+{% block controls %}
+
+
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip01" class="form-label">Ruc</label>
+    <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese Ruc" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+  </div>
+
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip02" class="form-label">Proveedor</label>
+    <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingrese Nombre Proveedor" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+  </div>
+
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltipUsername" class="form-label">Id</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="validationTooltipUsernamePrepend">ID</span>
+      <input class="form-control" type="text" placeholder="003" aria-label="Disabled input example" disabled>
+      <div class="invalid-tooltip">
+        Please choose a unique and valid username.
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip03" class="form-label">Telefono</label>
+    <input type="number" class="form-control" id="validationTooltip03" placeholder="Ingrese Digitos" required>
+    <div class="invalid-tooltip">
+    </div>
+  </div>
+    <div class="col-md-4 position-relative">
+    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+    <input type="email" class="form-control" id="validationTooltip03" placeholder="nombre@ejemplo.com" required>
+    </div>
+    <div class="col-md-4 position-relative">
+    <label for="exampleFormControlInput1" class="form-label">Orden</label>
+    <input type="text" class="form-control" id="validationTooltip03" placeholder="N. de Orden" required>
+    </div>
+
+    <div class="col-md-6 position-relative">
+    <label for="exampleFormControlInput1" class="form-label">Ciudad</label>
+    <input type="text" class="form-control" id="validationTooltip03" placeholder="Ingrese Ciudad" required>
+    </div>
+  <div class="col-md-6 position-relative">
+    <label for="validationTooltip05" class="form-label">Dirección</label>
+    <input type="text" class="form-control" id="validationTooltip05" placeholder="Dirección del Proveedor" required>
+    <div class="invalid-tooltip">
+      Please provide a valid zip.
+    </div>
+  </div>
+</form>
+
+{% endblock %}

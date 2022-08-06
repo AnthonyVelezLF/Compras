@@ -57,7 +57,9 @@
             <div class="card" style="height:15rem" >
               <img src="{% static 'img/cards/administracion-del-dinero.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
                <div class="card-body text-center">
-                <h5 class="card-title text-success">Compras</h5>
+                <a class="text-decoration-none" href="{% url 'compra' %}">
+                 <h5 class="card-title text-success">Compras</h5>
+                </a>
                 <p class="card-text">Compras de productos por menor y mayor  a todos nuestro clientes</p>
               </div>
             </div>
