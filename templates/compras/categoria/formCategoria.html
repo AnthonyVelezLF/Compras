@@ -24,33 +24,3 @@
 </form>
 
 {% endblock %}
-
-{% extends 'consulta.html' %}
-{% load static %}
-
-{% block columns %}
-    <tr>
-        <th scope="col" style="width: 0.3%;">Id</th>
-        <th scope="col" style="width: 15%;">Categoria</th>
-        <th scope="col" style="width: 0.3%;">Opciones</th>
-  </tr>
-
-{% endblock %}
-
-{% block rows %}
-  <tr>
-      <td>123</td>
-      <td>Automotriz</td>
-      <td class="acciones">
-        <a href="#">✏️</a>
-        <a href="#">❌</a>
-      </td>
-  </tr>
-  <tr>
-      <td>102</td>
-      <td>Alimentos</td>
-      <td class="acciones">
-        <a href="#">✏️</a>
-        <a href="#">❌</a>
-      </td>
-{% endblock %}
