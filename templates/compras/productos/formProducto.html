@@ -26,7 +26,7 @@
 
       <div class="col-md-4 position-relative">
     <label for="validationTooltip01" class="form-label">Producto</label>
-    <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese Nombre" required>
+    <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese Nombre" >
     <div class="valid-tooltip">
       Looks good!
     </div>
@@ -34,7 +34,7 @@
 
       <div class="col-md-4 position-relative">
     <label for="validationTooltip01" class="form-label">Descripción</label>
-    <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese Descripción" required>
+    <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese Descripción" >
     <div class="valid-tooltip">
       Looks good!
     </div>
@@ -42,7 +42,7 @@
 
       <div class="col-md-4 position-relative">
     <label for="validationTooltip01" class="form-label">Precio por Unidad</label>
-    <input type="number" class="form-control" id="validationTooltip01" placeholder="Ingrese Precio" required>
+    <input type="number" class="form-control" id="validationTooltip01" placeholder="Ingrese Precio" >
     <div class="valid-tooltip">
       Looks good!
     </div>
@@ -50,7 +50,7 @@
 
       <div class="col-md-4 position-relative">
     <label for="validationTooltip01" class="form-label">Precio por Mayor</label>
-    <input type="Number" class="form-control" id="validationTooltip01" placeholder="Ingrese Precio" required>
+    <input type="Number" class="form-control" id="validationTooltip01" placeholder="Ingrese Precio" >
     <div class="valid-tooltip">
       Looks good!
     </div>
@@ -58,7 +58,7 @@
 
          <div class="col-md-4 position-relative">
     <label for="validationTooltip01" class="form-label">Cantidad por Mayor</label>
-    <input type="Number" class="form-control" id="validationTooltip01" placeholder="Minima Cantidad" required>
+    <input type="Number" class="form-control" id="validationTooltip01" placeholder="Minima Cantidad" >
     <div class="valid-tooltip">
       Looks good!
     </div>
@@ -76,6 +76,63 @@
     Descontinuado
   </label>
 </div>
+
+        <div class="card-footer">
+            {% block buttons_list %}
+                <a href="{{ crear_url }}" class="btn btn-primary btn-flat btnTest">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg> Registrar
+                </a>
+            {% endblock %}
+        </div>
+
+
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+        <th scope="col" style="width: 5%;">Id</th>
+        <th scope="col" style="width: 10%;">Categoria</th>
+        <th scope="col" style="width: 20%;">Producto</th>
+        <th scope="col" style="width: 20%;">Descripción</th>
+        <th scope="col" style="width: 20%;">Precio por Unidad</th>
+        <th scope="col" style="width: 20%;">Precio al Mayor</th>
+        <th scope="col" style="width: 20%;">Cantidad al Mayor</th>
+        <th scope="col" style="width: 20%;">Descontinuado</th>
+        <th scope="col" style="width: 20%;">Opciones</th>
+    </tr>
+  <tbody>
+  <tr>
+      <td>12345</td>
+      <td>Automotriz</td>
+      <td>Llanta</td>
+      <td>Para Autos</td>
+      <td>59.99</td>
+      <td>45.00</td>
+      <td>3</td>
+      <td>Desactivado</td>
+      <td class="acciones">
+        <a href="#">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+  <tr>
+      <td>35436</td>
+      <td>Alimentos</td>
+      <td>Cereal</td>
+      <td>Alimento sabor a Chocolate</td>
+      <td>7.00</td>
+      <td>5.00</td>
+      <td>6</td>
+      <td>Activado</td>
+      <td class="acciones">
+        <a href="#">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+  </tbody>
+</table>
 
 </form>
 
